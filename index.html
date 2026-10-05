@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Matias Nahuel Virga Taboada — Tier 2/3 Support Analyst & Vibe Coder. Proyectos reales, soluciones con IA y automatización." />
+  <meta name="keywords" content="Matias Virga, portafolio, vibe coder, soporte IT, automatización, IA, web development" />
+  <meta name="author" content="Matias Nahuel Virga Taboada" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Matias Virga — Portafolio" />
+  <meta property="og:description" content="Todo lo que puedas imaginar, lo construimos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero_avatar.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Matias Virga — Portafolio" />
+  <meta name="twitter:description" content="Tier 2/3 Support Analyst & Vibe Coder" />
+
+  <title>Matias Virga — Portafolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Glow Blobs -->
+  <div class="blob blob-cyan"></div>
+  <div class="blob blob-violet"></div>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">MV<span>.</span></a>
+        <ul class="nav-links" role="menubar">
+          <li><a href="#sobre-mi" role="menuitem">Sobre mí</a></li>
+          <li><a href="#proyectos" role="menuitem">Proyectos</a></li>
+          <li><a href="#skills" role="menuitem">Skills</a></li>
+          <li><a href="#contacto" class="nav-cta" role="menuitem">Contacto</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" role="menu">
+      <a href="#sobre-mi" role="menuitem">Sobre mí</a>
+      <a href="#proyectos" role="menuitem">Proyectos</a>
+      <a href="#skills" role="menuitem">Skills</a>
+      <a href="#contacto" role="menuitem">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Text -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Disponible para proyectos
+          </div>
+          <h1 class="hero-title" id="hero-title">
+            Matias<br>
+            <span class="name-highlight">Virga Taboada</span>
+          </h1>
+          <p class="hero-role">
+            &gt; <span id="typed-role" class="role-tag">Tier 2/3 Support Analyst</span><span class="cursor-blink">|</span>
+          </p>
+          <p class="hero-tagline">
+            <strong>Todo lo que puedas imaginar, lo construimos.</strong><br>
+            Resuelvo problemas reales con herramientas reales — automatización, IA y código para negocios que no pueden darse el lujo de quedarse quietos.
+          </p>
+          <div class="hero-ctas">
+            <a href="#proyectos" class="btn-primary" id="cta-ver-proyectos">
+              🚀 Ver proyectos
+            </a>
+            <a href="#contacto" class="btn-secondary" id="cta-contactar">
+              ✉️ Contactar
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value" data-count="2" data-suffix="">2</span>
+              <span class="stat-label">Proyectos entregados</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" data-count="0" data-suffix="$">$0</span>
+              <span class="stat-label">Costo infra para el cliente</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" data-count="60" data-suffix="s">&lt;60s</span>
+              <span class="stat-label">Tiempo de reserva Barber</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="hero-image-wrap">
+          <img src="images/hero_avatar.jpg" alt="Matias Virga — Developer & Vibe Coder" />
+          <div class="hero-floating-card card-top">
+            <span class="card-icon">⚡</span>
+            <div>
+              <div class="card-text">$750.000 ARS</div>
+              <div class="card-sub">Barber Fort · ticket vendido</div>
+            </div>
+          </div>
+          <div class="hero-floating-card card-bot">
+            <span class="card-icon">🌐</span>
+            <div>
+              <div class="card-text">citroenmartinortiga.ar</div>
+              <div class="card-sub">En producción · 2024/2026</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE MI
+       ============================================================ -->
+  <section id="sobre-mi" aria-labelledby="sobre-mi-title">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">// about.me</span>
+        <h2 class="section-title" id="sobre-mi-title">¿Quién soy <span class="accent">realmente</span>?</h2>
+        <p class="section-desc">No vengo del mundo dev clásico, y eso es exactamente la ventaja.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>
+            Trabajo como <strong>Analista de Soporte Tier 2/3</strong> — lo que en la práctica significa que soy el tipo que aparece cuando el sistema explota, el proceso falla o nadie entiende qué pasó. Eso me entrenó para ver los problemas sin romanticismos: primero entender, después resolver, después documentar.
+          </p>
+          <p>
+            Empecé a usar herramientas de IA generativa para <strong>automatizar las partes aburridas</strong> de mi trabajo. Lo que comenzó como "voy a ahorrarte 10 minutos al día" se convirtió en sistemas completos que hoy corren en producción para clientes reales. Soy lo que se conoce como <strong>Vibe Coder</strong>: construyo software sin venir del camino tradicional, usando IA como palanca real de productividad.
+          </p>
+          <p>
+            Mi ventaja no es saber más tecnologías que otros — es entender qué necesita un negocio, destilar eso en algo concreto y construirlo en el menor tiempo posible, con el menor costo operativo posible. <strong>Si existe un proceso manual y repetitivo, hay una forma de optimizarlo.</strong>
+          </p>
+        </div>
+        <div class="about-highlights fade-in">
+          <div class="highlight-item">
+            <div class="highlight-icon">🎯</div>
+            <div>
+              <div class="highlight-title">Enfoque en impacto real</div>
+              <div class="highlight-desc">Cada proyecto tiene métricas concretas: tiempo ahorrado, mensajes eliminados, ventas habilitadas.</div>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🤖</div>
+            <div>
+              <div class="highlight-title">AI-Augmented Builder</div>
+              <div class="highlight-desc">Uso Antigravity, Claude y otras herramientas como multiplicadores de capacidad, no como atajo.</div>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">💸</div>
+            <div>
+              <div class="highlight-title">Costo $0 de infraestructura</div>
+              <div class="highlight-desc">Diseño soluciones que usan tiers gratuitos: Netlify, Supabase, Google Apps Script. Sin sorpresas.</div>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🔧</div>
+            <div>
+              <div class="highlight-title">Mentalidad de soporte</div>
+              <div class="highlight-desc">Entrego código que funciona cuando yo no estoy mirando y que el cliente puede operar sin ayuda.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROYECTOS
+       ============================================================ -->
+  <section id="proyectos" aria-labelledby="proyectos-title">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">// projects[]</span>
+        <h2 class="section-title" id="proyectos-title">Proyectos <span class="accent">reales</span></h2>
+        <p class="section-desc">No demos, no tutoriales. Clientes reales, problemas reales, código en producción.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- ── BARBER FORT ── -->
+        <article class="project-card fade-in" id="proyecto-barber-fort">
+          <div class="project-image">
+            <img src="images/barber_fort_preview.jpg" alt="Barber Fort — Sistema de reservas online" loading="lazy" />
+            <div class="project-image-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML/CSS/JS</span>
+              <span class="tag">Google Apps Script</span>
+              <span class="tag violet">Google Sheets</span>
+              <span class="tag green">Netlify</span>
+            </div>
+            <h3 class="project-name">💈 Barber Fort</h3>
+            <p class="project-desc">
+              Una barbería premium recibía <strong>30–50 mensajes de WhatsApp por día</strong> para agendar turnos. Construí un sistema de autogestión de turnos donde el cliente elige sucursal, barbero, servicio y horario — en menos de 60 segundos. Con validación atómica que elimina el doble-booking.
+            </p>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-value">~50</span>
+                <span class="metric-label">Msgs/día eliminados</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">&lt;60s</span>
+                <span class="metric-label">Tiempo de reserva</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">$0</span>
+                <span class="metric-label">Costo mensual</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">$750k</span>
+                <span class="metric-label">Ticket ARS</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://script.google.com/macros/s/AKfycbwgJaYF5DA8hDP38XZIL1T-RLVB7Sxlg0btZUeUGcijsDjppgHEcyDVYOxgjrAVyIWZ2A/exec"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link primary" id="barber-fort-backend-link">
+                ⚡ Backend live
+              </a>
+              <span class="project-link secondary" title="Repositorio privado por acuerdo con el cliente">
+                🔒 Repo privado
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── CITROEN MARTIN ORTIGA ── -->
+        <article class="project-card fade-in" id="proyecto-citroen">
+          <div class="project-image">
+            <img src="images/citroen_preview.jpg" alt="Citroën Martín Ortiga — Catálogo interactivo" loading="lazy" />
+            <div class="project-image-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML/CSS/JS</span>
+              <span class="tag">Supabase</span>
+              <span class="tag violet">Alpine.js</span>
+              <span class="tag">Python</span>
+              <span class="tag green">Netlify</span>
+            </div>
+            <h3 class="project-name">🚗 Citroën Martín Ortiga</h3>
+            <p class="project-desc">
+              Negocio familiar con 60+ años de historia y <strong>cero presencia digital</strong>. Construí un sitio con catálogo interactivo de repuestos, filtros por modelo/categoría, carrito con checkout automático por WhatsApp y pipeline de imágenes con IA para procesar 100s de fotos de producto.
+            </p>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-value">60+</span>
+                <span class="metric-label">Años de historia</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">~60s</span>
+                <span class="metric-label">Deploy automático</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">$0</span>
+                <span class="metric-label">Costo infra/mes</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">100%</span>
+                <span class="metric-label">SEO técnico</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://citroenmartinortiga.ar"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link primary" id="citroen-demo-link">
+                🌐 Ver sitio live
+              </a>
+              <span class="project-link secondary" title="Repositorio privado por acuerdo con el cliente">
+                🔒 Repo privado
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+       ============================================================ -->
+  <section id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">// skills.map()</span>
+        <h2 class="section-title" id="skills-title">Stack <span class="accent">técnico</span></h2>
+        <p class="section-desc">Solo tecnologías que puedo defender en una conversación técnica real.</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category fade-in">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🖥️</span>
+            <span class="skill-cat-name">Frontend</span>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-dot"></span>HTML5 semántico</li>
+            <li class="skill-item"><span class="skill-dot"></span>CSS3 / Vanilla</li>
+            <li class="skill-item"><span class="skill-dot"></span>JavaScript ES6+</li>
+            <li class="skill-item"><span class="skill-dot"></span>Alpine.js</li>
+            <li class="skill-item"><span class="skill-dot"></span>Tailwind CSS v3</li>
+            <li class="skill-item"><span class="skill-dot"></span>GSAP / ScrollTrigger</li>
+          </ul>
+        </div>
+
+        <div class="skill-category fade-in">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <span class="skill-cat-name">Backend</span>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-dot"></span>Google Apps Script</li>
+            <li class="skill-item"><span class="skill-dot"></span>Node.js / Express</li>
+            <li class="skill-item"><span class="skill-dot"></span>Python (automatización)</li>
+            <li class="skill-item"><span class="skill-dot"></span>REST APIs</li>
+            <li class="skill-item"><span class="skill-dot"></span>WhatsApp API (wa.me)</li>
+            <li class="skill-item"><span class="skill-dot"></span>Serverless Functions</li>
+          </ul>
+        </div>
+
+        <div class="skill-category fade-in">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗄️</span>
+            <span class="skill-cat-name">Bases de datos</span>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-dot"></span>Supabase (PostgreSQL)</li>
+            <li class="skill-item"><span class="skill-dot"></span>Google Sheets (DB)</li>
+            <li class="skill-item"><span class="skill-dot"></span>Supabase Storage</li>
+            <li class="skill-item"><span class="skill-dot"></span>localStorage / Cache</li>
+            <li class="skill-item"><span class="skill-dot"></span>LockService (atómica)</li>
+          </ul>
+        </div>
+
+        <div class="skill-category fade-in">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🚀</span>
+            <span class="skill-cat-name">DevOps / IA</span>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-dot"></span>Git / GitHub</li>
+            <li class="skill-item"><span class="skill-dot"></span>Netlify CI/CD</li>
+            <li class="skill-item"><span class="skill-dot"></span>Antigravity IDE</li>
+            <li class="skill-item"><span class="skill-dot"></span>Claude / Gemini</li>
+            <li class="skill-item"><span class="skill-dot"></span>Python + rembg / BiRefNet</li>
+            <li class="skill-item"><span class="skill-dot"></span>SEO técnico</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+       ============================================================ -->
+  <section id="contacto" aria-labelledby="contacto-title">
+    <div class="container">
+      <div class="contact-wrapper fade-in">
+        <div class="contact-glow-box">
+          <span class="contact-greeting">// ¿Tenés un proyecto en mente?</span>
+          <h2 class="contact-title" id="contacto-title">Hablemos y lo <span style="color:var(--cyan)">construimos</span></h2>
+          <p class="contact-desc">
+            Si tenés un proceso manual, un problema sin resolver o una idea que parece imposible — escribime. Sin costo, sin compromiso.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:matias.virga@gmail.com"
+               class="contact-btn email" id="contacto-email">
+              ✉️ matias.virga@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/matias-virga-67583a207"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-btn linkedin" id="contacto-linkedin">
+              💼 LinkedIn
+            </a>
+            <a href="https://github.com/MatiasVirga"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-btn github" id="contacto-github">
+              🐙 GitHub
+            </a>
+          </div>
+          <div class="contact-availability">
+            <span class="avail-dot"></span>
+            Disponible para proyectos freelance — respuesta en menos de 24h
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">MV.</span>
+        <span class="footer-copy">© 2026 Matias Nahuel Virga Taboada · Hecho con ☕ y Antigravity</span>
+        <nav class="footer-links" aria-label="Links del footer">
+          <a href="mailto:matias.virga@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/matias-virga-67583a207" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/MatiasVirga" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
