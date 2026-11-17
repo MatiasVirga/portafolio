@@ -11,23 +11,30 @@
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://matiasvirga.github.io" />
+  <link rel="canonical" href="https://matiasvirga.github.io/portafolio/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Matias Virga — Portafolio Profesional" />
   <meta property="og:description" content="Todo lo que puedas imaginar, lo construimos. Automatización, IA y código para negocios que no pueden quedarse quietos." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://matiasvirga.github.io" />
-  <meta property="og:image" content="https://matiasvirga.github.io/images/hero_avatar.jpg" />
+  <meta property="og:url" content="https://matiasvirga.github.io/portafolio/" />
+  <meta property="og:image" content="https://matiasvirga.github.io/portafolio/images/og-portfolio.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Matias Virga Taboada — Vibe Coder &amp; Soporte IT Tier 2/3" />
+  <meta property="og:site_name" content="Matias Virga" />
+  <meta property="og:locale" content="es_AR" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Matias Virga — Portafolio" />
   <meta name="twitter:description" content="Tier 2/3 Support Analyst & Vibe Coder" />
-  <meta name="twitter:image" content="https://matiasvirga.github.io/images/hero_avatar.jpg" />
+  <meta name="twitter:image" content="https://matiasvirga.github.io/portafolio/images/og-portfolio.png" />
 
-  <title>Matias Virga — Portafolio</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.1.0" />
+  <meta name="theme-color" content="#080B14" />
+
+  <title>Matias Virga — Vibe Coder &amp; Soporte IT Tier 2/3</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.2.0" />
 </head>
 <body>
 
@@ -101,8 +108,8 @@
           </div>
           <div class="hero-stats">
             <div class="stat">
-              <span class="stat-value" data-count="2" data-suffix="">2</span>
-              <span class="stat-label">Proyectos entregados</span>
+              <span class="stat-value" data-count="3" data-suffix="">3</span>
+              <span class="stat-label">Sitios en producción</span>
             </div>
             <div class="stat">
               <span class="stat-value" data-count="0" data-suffix="$">$0</span>
@@ -202,9 +209,58 @@
       <div class="section-header fade-in">
         <span class="section-tag">// projects[]</span>
         <h2 class="section-title" id="proyectos-title">Proyectos <span class="accent">reales</span></h2>
-        <p class="section-desc">No demos, no tutoriales. Clientes reales, problemas reales, código en producción.</p>
+        <p class="section-desc">Clientes reales, producto propio y código en producción. Todo lo que ves acá está funcionando hoy.</p>
       </div>
       <div class="projects-grid">
+
+        <!-- ── AUTOMATIZAHOY (PROYECTO PROPIO / ECOSISTEMA) ── -->
+        <article class="project-card project-card--wide fade-in" id="proyecto-automatizahoy">
+          <div class="project-image">
+            <img src="images/automatizahoy_preview.png" alt="AutomatizaHoy — IA, automatizaciones y sitios web para PyMEs" loading="lazy" />
+            <div class="project-image-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag own">★ Proyecto propio</span>
+              <span class="tag">HTML/CSS/JS</span>
+              <span class="tag violet">n8n</span>
+              <span class="tag">Apps Script</span>
+              <span class="tag green">Netlify</span>
+            </div>
+            <h3 class="project-name">⚡ AutomatizaHoy</h3>
+            <p class="project-desc">
+              El punto donde convergen todos mis proyectos. Barber Fort y Citroën Martín Ortiga eran trabajos sueltos: buenos, pero invisibles para el próximo cliente. <strong>AutomatizaHoy los empaqueta en una oferta concreta</strong> para PyMEs — sitios que venden, procesos que se hacen solos y agentes de IA que atienden. Una landing de una sola página con los casos reales, demo en vivo y comparador antes/después de un Excel reconstruido de cero.
+            </p>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-value">0</span>
+                <span class="metric-label">Dependencias externas</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">4</span>
+                <span class="metric-label">Servicios ofrecidos</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">2</span>
+                <span class="metric-label">Casos con demo live</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">$0</span>
+                <span class="metric-label">Costo infra/mes</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <button type="button" class="project-link primary btn-case-study" data-project="automatizahoy" id="btn-cs-automatizahoy">
+                📖 Leer Case Study
+              </button>
+              <a href="https://automatizahoy.com.ar"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link secondary" id="automatizahoy-demo-link">
+                🌐 Visitar automatizahoy.com.ar
+              </a>
+            </div>
+          </div>
+        </article>
 
         <!-- ── BARBER FORT ── -->
         <article class="project-card fade-in" id="proyecto-barber-fort">
@@ -245,10 +301,10 @@
               <button type="button" class="project-link primary btn-case-study" data-project="barber-fort" id="btn-cs-barber">
                 📖 Leer Case Study
               </button>
-              <a href="https://script.google.com/macros/s/AKfycbwgJaYF5DA8hDP38XZIL1T-RLVB7Sxlg0btZUeUGcijsDjppgHEcyDVYOxgjrAVyIWZ2A/exec"
+              <a href="https://barberfort.com.ar"
                  target="_blank" rel="noopener noreferrer"
-                 class="project-link secondary" id="barber-fort-backend-link" title="Consultar endpoint JSON en producción">
-                ⚡ API Backend
+                 class="project-link secondary" id="barberfort-demo-link">
+                🌐 Ver sitio live
               </a>
             </div>
           </div>
@@ -474,6 +530,6 @@
   <!-- Toast Notification -->
   <div class="toast" id="toast-notification" role="status" aria-live="polite"></div>
 
-  <script src="js/main.js?v=1.1.0"></script>
+  <script src="js/main.js?v=1.2.0"></script>
 </body>
 </html>

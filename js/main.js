@@ -269,8 +269,8 @@ const caseStudiesData = {
         <strong>Notificaciones:</strong> WhatsApp API (wa.me) sin costo de suscripción Business API.</p>
       </div>
     `,
-    liveLink: 'https://script.google.com/macros/s/AKfycbwgJaYF5DA8hDP38XZIL1T-RLVB7Sxlg0btZUeUGcijsDjppgHEcyDVYOxgjrAVyIWZ2A/exec',
-    liveLabel: '⚡ Consultar Endpoint API (Live)'
+    liveLink: 'https://barberfort.com.ar',
+    liveLabel: '🌐 Visitar barberfort.com.ar'
   },
   'citroen': {
     title: '🚗 Citroën Martín Ortiga — Plataforma de Catálogo',
@@ -354,6 +354,90 @@ const caseStudiesData = {
     `,
     liveLink: 'https://citroenmartinortiga.ar',
     liveLabel: '🌐 Visitar citroenmartinortiga.ar'
+  },
+  'automatizahoy': {
+    title: '⚡ AutomatizaHoy — Marca y plataforma de servicios',
+    subtitle: 'Convertir tres trabajos sueltos en una oferta que un dueño de PyME entiende en 30 segundos: casos reales, demos en vivo y cero dependencias.',
+    badges: [
+      { text: 'HTML5/CSS3/JS Vanilla', type: '' },
+      { text: 'n8n', type: 'violet' },
+      { text: 'Google Apps Script', type: '' },
+      { text: 'Netlify + build propio', type: 'green' },
+      { text: 'WhatsApp Deep Link', type: '' }
+    ],
+    problema: `
+      <div class="modal-section">
+        <h4>🚨 El Problema de Negocio</h4>
+        <p>Barber Fort y Citroën Martín Ortiga funcionaban, pero vivían como piezas aisladas: un repo privado por acá, un link suelto por allá, un Excel que nadie veía. Un dueño de PyME que los miraba no podía responder la única pregunta que importa: <strong>"¿esto qué me resuelve a mí?"</strong>.</p>
+        <p>Sin una marca que los contenga, cada proyecto empezaba de cero la conversación comercial y el trabajo ya hecho no generaba el siguiente cliente.</p>
+      </div>
+      <div class="modal-section">
+        <h4>💡 La Solución Implementada</h4>
+        <p><strong>AutomatizaHoy</strong> es el paraguas: una landing de una sola página que ordena la oferta en cuatro dolores concretos — sitios que venden, procesos que se hacen solos, agentes de IA que atienden, y reseñas/presencia local — y los respalda con los casos reales, abribles y en producción.</p>
+        <p>La pieza que hace el trabajo pesado es el <strong>comparador antes/después del Excel de caja de Barber Fort</strong>: en lugar de explicar que "reconstruí una planilla", el visitante arrastra un slider y ve la diferencia. El formulario no tiene backend: arma el mensaje y abre WhatsApp con todo escrito.</p>
+      </div>
+    `,
+    arquitectura: `
+      <div class="modal-section">
+        <h4>⚙️ Decisiones Técnicas y de Trinchera</h4>
+        <p>Sin frameworks ni build obligatorio, pero con criterio de producto:</p>
+        <div class="tech-callout-grid">
+          <div class="tech-callout">
+            <div class="tech-callout-title">🧱 Cero dependencias por CDN</div>
+            <div class="tech-callout-desc">Ni Tailwind ni Font Awesome: los íconos son un sprite SVG inline al inicio del body. Carga rápido, funciona offline y no se rompe si un CDN se cae o cambia de licencia.</div>
+          </div>
+          <div class="tech-callout">
+            <div class="tech-callout-title">🎚️ Comparador sin librerías</div>
+            <div class="tech-callout-desc">Antes/después resuelto con <code>clip-path</code> y un <code>input[type=range]</code> nativo, con dos vistas (planilla diaria y resumen semanal) y control por teclado.</div>
+          </div>
+          <div class="tech-callout">
+            <div class="tech-callout-title">💳 Porta reseñas dibujado en CSS</div>
+            <div class="tech-callout-desc">El marco de acrílico del producto físico es puro CSS: degradés, brillo y espesor. La placa impresa es un WebP 2:3 y los QR salen de un generador propio (<code>gen-qr.mjs</code>) con script de verificación aparte.</div>
+          </div>
+          <div class="tech-callout">
+            <div class="tech-callout-title">📦 Build propio + 404 defensivo</div>
+            <div class="tech-callout-desc"><code>build.mjs</code> arma <code>dist/</code> publicando solo lo necesario; el <code>netlify.toml</code> devuelve 404 para <code>/docs</code>, <code>/brand</code>, <code>/scripts</code> y <code>/Contenido</code> para no filtrar material interno.</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-section" style="margin-top: 20px;">
+        <h4>♿ Accesibilidad y motion, sin descuidar la conversión</h4>
+        <p>HTML semántico, skip link, <code>aria-expanded</code>, pestañas navegables con teclado y foco visible. Layout fluido con <code>clamp()</code> de 1200 a 380 px, objetivos táctiles de 44 px, zonas seguras de iPhone y respeto por <code>prefers-reduced-motion</code>.</p>
+      </div>
+    `,
+    metricas: `
+      <div class="modal-section">
+        <h4>📈 Números del proyecto</h4>
+        <div class="metrics-badge-grid">
+          <div class="metric-pill">
+            <div class="metric-pill-val">0</div>
+            <div class="metric-pill-lbl">Dependencias externas</div>
+          </div>
+          <div class="metric-pill">
+            <div class="metric-pill-val">4</div>
+            <div class="metric-pill-lbl">Servicios empaquetados</div>
+          </div>
+          <div class="metric-pill">
+            <div class="metric-pill-val">2</div>
+            <div class="metric-pill-lbl">Casos con demo en vivo</div>
+          </div>
+          <div class="metric-pill">
+            <div class="metric-pill-val">$0</div>
+            <div class="metric-pill-lbl">Costo de infra/mes</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h4>🛠️ Stack Tecnológico Completo</h4>
+        <p><strong>Frontend:</strong> HTML5 semántico, CSS3 con design system propio (variables, <code>clamp()</code>, componentes), JavaScript ES6+ sin bundler obligatorio.<br>
+        <strong>Automatización:</strong> n8n, Google Apps Script y Google Sheets como motor de los flujos que se venden.<br>
+        <strong>Publicación:</strong> Netlify + <code>build.mjs</code> propio, con <code>_headers</code>, <code>_redirects</code>, sitemap, robots y 404.<br>
+        <strong>Contacto:</strong> deep link a WhatsApp (<code>wa.me</code>) con mensaje pre-armado, sin backend ni formularios eternos.<br>
+        <strong>SEO:</strong> metadatos, Open Graph y JSON-LD <code>ProfessionalService</code>.</p>
+      </div>
+    `,
+    liveLink: 'https://automatizahoy.com.ar',
+    liveLabel: '🌐 Visitar automatizahoy.com.ar'
   }
 };
 
@@ -421,7 +505,7 @@ function closeCaseStudy() {
   currentOpenProject = null;
 
   // Clean hash
-  if (history.pushState && window.location.hash.includes('barber-fort') || window.location.hash.includes('citroen')) {
+  if (history.pushState && window.location.hash.replace('#', '') in caseStudiesData) {
     history.pushState(null, null, window.location.pathname + window.location.search);
   }
 }
