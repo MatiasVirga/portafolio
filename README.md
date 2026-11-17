@@ -79,6 +79,8 @@ Sistema de autogestión de turnos para cadena de barberías premium. Elimina ~50
 
 **Stack:** HTML/CSS/JS · Google Apps Script · Google Sheets · Netlify
 
+🌐 [barberfort.com.ar](https://barberfort.com.ar)
+
 ---
 
 ### 🚗 Citroën Martín Ortiga — Catálogo Interactivo
